@@ -14,3 +14,10 @@ SQL allows you to perform a variety of tasks, including querying data, updating 
     
 5. **Foreign Key**: A field that links one table to another, representing a relationship between the tables.
 
+### Basic SQL Commands
+
+1. **SELECT** – Retrieve data from one or more tables.
+```sql
+SELECT column1, column2 FROM table_name;
+```
+
