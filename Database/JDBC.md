@@ -7,11 +7,11 @@ JDBC (Java Database Connectivity) is an API in Java that enables Java applicatio
 2. **Connection**: This represents a connection to a database. To interact with a database, you first need to establish a connection using the `DriverManager` or `DataSource` classes.
     
 3. **Statement**: This is used to send SQL queries to the database. There are different types of statements:
-    
     - `Statement`: Used for simple SQL queries.
     - `PreparedStatement`: Used for precompiled SQL queries with placeholders, and it can help avoid SQL injection attacks.
     - `CallableStatement`: Used for calling stored procedures.
-4. **ResultSet**: This represents the result of a query. It's an object that allows you to iterate over the rows of data returned from the database.
+    
+1. **ResultSet**: This represents the result of a query. It's an object that allows you to iterate over the rows of data returned from the database.
     
 5. **SQLException**: This is the exception class that is thrown when there are database-related errors.
 

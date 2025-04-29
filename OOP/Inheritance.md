@@ -13,6 +13,14 @@ Programmer => Child Class (Sub Class, Derived)
 - **Super Class/Parent Class:** Superclass is the class from where a subclass inherits the features. It is also called a base class or a parent class.
 - **Reusability:** Reusability is a mechanism which facilitates you to reuse the fields and methods of the existing class when you create a new class. You can use the same fields and methods already defined in the previous class.
 
+**Inheritance** in Java is a mechanism where one class (subclass/child) acquires the properties and behaviors (fields and methods) of another class (superclass/parent). It helps in code reusability and method overriding. A subclass can extend only one superclass (single inheritance), but it can implement multiple interfaces.
+
+### Key Concepts:
+
+- **Superclass**: The parent class that provides attributes and methods.
+- **Subclass**: The child class that inherits the attributes and methods from the superclass.
+- **`extends` keyword**: Used to create a subclass.
+
 **Syntax of Java Inheritance** 
 
 ```java
@@ -24,6 +32,41 @@ class Car extends Vehicle {
 // Car IS-A Vehicle
 }
 ```
+
+```java
+// Superclass (Parent class)
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+// Subclass (Child class) extending the Animal class
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of Dog (child class)
+        Dog dog = new Dog();
+        
+        // Inherited method from Animal class
+        dog.eat();  // Output: This animal eats food.
+        
+        // Dog's own method
+        dog.bark();  // Output: The dog barks.
+    }
+}
+```
+
+### Explanation:
+
+1. **`Animal`** is the superclass, which has a method `eat()`.
+2. **`Dog`** is the subclass that inherits the `eat()` method from `Animal` and also adds a new method `bark()`.
+3. In the `main` method, we create an instance of `Dog`. It can call both the `eat()` method (inherited from `Animal`) and its own method `bark()`.
 
 Object 
 - has no parent (super) class
