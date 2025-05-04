@@ -151,11 +151,28 @@ public final class ImmutablePerson {
 ### **4. Data Validation in Setters**
 
 - Prevent invalid data before storing it.
+```java
+private int age;
+
+public void setAge(int age) {  
+    if (age < 0 || age > 120) {  
+        throw new IllegalArgumentException("Invalid age!");  
+    }  
+    this.age = age;  
+}  
+```
 
 ### **5. Logging/Audit Trails**
 
 - Track when a field is accessed/modified.
+```java
+private String email;
 
+public void setEmail(String email) {  
+    System.out.println("Email changed from " + this.email + " to " + email);  
+    this.email = email;  
+}  
+```
 
 ## **🚀 Key Takeaways**
 
