@@ -98,15 +98,55 @@ Imagine a **bank account**:
 ### **1. Read-Only or Write-Only Fields**
 
 - **Read-only**: Only provide a **getter**, no setter.
+```java
+private final String id = "USER123"; // Can't be modified
+
+public String getId() {  
+    return id; // Only readable, not modifiable  
+}  
+```
+
 - **Write-only**: Only provide a **setter** (rare, but useful for sensitive data like passwords).
+```java
+private String password;
+
+public void setPassword(String password) {  
+    this.password = hashPassword(password); // Stores hashed version  
+}  
+```
 
 ### **2. Lazy Initialization (Delayed Object Creation)**
 
 - Initialize an object **only when needed** (saves memory).
+```java
+private HeavyResource heavyResource;
+
+public HeavyResource getHeavyResource() {  
+    if (heavyResource == null) {  
+        heavyResource = new HeavyResource(); // Created only on first call  
+    }  
+    return heavyResource;  
+}  
+```
 
 ### **3. Immutable Objects (No Setters + Final Fields)**
 
 - Once created, **object state cannot change** (e.g., `String`).
+```java
+public final class ImmutablePerson {  
+    private final String name;  
+    private final int age;  
+    
+    public ImmutablePerson(String name, int age) {  
+        this.name = name;  
+        this.age = age;  
+    }  
+    
+    // Only getters, NO setters  
+    public String getName() { return name; }  
+    public int getAge() { return age; }  
+}  
+```
 
 ### **4. Data Validation in Setters**
 
