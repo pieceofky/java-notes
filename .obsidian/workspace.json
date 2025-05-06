@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP/polymorphism.md",
+                "file": "OOP/final-keyword.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "polymorphism"
+              "title": "final-keyword"
             }
           }
         ],
@@ -204,6 +204,10 @@
   },
   "active": "f7b332c2617f8d26",
   "lastOpenFiles": [
+    "OOP/encapsulation.md",
+    "OOP/final-keyword.md",
+    "Database/JDBC.md",
+    "OOP/polymorphism.md",
     "OOP/is-a.md",
     "OOP/has-a-(composition).md",
     "Fundamentals/basic-literals.md",
@@ -226,10 +230,6 @@
     "Implementation_procedure.md",
     "Functional Interfaces.md",
     "Exception.md",
-    "mm-lib.md",
-    "Database/JDBC.md",
-    "Spring/Spring Data JPA/Lazy vs Eager Fetching.md",
-    "Spring/Spring Data JPA/What is it?.md",
     "Spring/Spring Data JPA",
     "Untitled",
     "Untitled.canvas",
